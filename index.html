@@ -1,74 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Assistant Virtuel - Démo</title>
+<meta charset="UTF-8">
+<title>Assistant Virtuel - Démo</title>
 
-  <!-- Script Tidio -->
-  <script src="//code.tidio.co/cvo69wlaoebdqfttrwhltf8keopoce4k.js" async></script>
+<!-- Script Tidio -->
+<script src="//code.tidio.co/TONCODEICI.js" async></script>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-    }
+<!-- Police moderne -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-    .colonne {
-      flex: 1;
-      background-size: cover;
-      background-position: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
 
-    .gauche {
-      background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
-    }
+/* Colonnes images */
+.colonne {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
-    .droite {
-      background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035');
-    }
+.colonne::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
 
-    .centre {
-      flex: 1;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
-      text-align: center;
-    }
+.gauche {
+  background-image: url('https://images.unsplash.com/photo-1595475884562-073c30d45670');
+}
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
+.droite {
+  background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35');
+}
 
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 400px;
-    }
-  </style>
+/* Partie centrale */
+.centre {
+  flex: 1.2;
+  background: #f8faf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+}
+
+/* Titre détaché */
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sous-titre {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #3a3a3a;
+}
+
+/* Texte principal */
+p {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 20px;
+}
+
+/* Encadré offre */
+.offre {
+  margin-top: 30px;
+  padding: 15px 25px;
+  border: 2px solid #6BAF92;
+  border-radius: 30px;
+  color: #2f5f4f;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+/* Nom discret */
+.signature {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-size: 13px;
+  color: #6b6b6b;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+  .colonne {
+    height: 200px;
+  }
+  .centre {
+    padding: 50px 25px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="colonne gauche"></div>
+<div class="colonne gauche"></div>
 
-  <div class="centre">
-    <h1>Assistant Virtuel pour Salons & Instituts</h1>
-    <p>
-      Découvrez comment un assistant automatique peut répondre aux demandes clients 24h/24, 
-      gérer les questions fréquentes et faciliter la prise de rendez-vous.
-    </p>
-    <p>
-      💬 Cliquez sur le chat en bas à droite pour tester la démonstration.
-    </p>
+<div class="centre">
+  <h1>Assistant Virtuel pour Salons & Instituts</h1>
+  <div class="sous-titre">
+    Automatisez vos réponses et facilitez la prise de rendez-vous.
   </div>
 
-  <div class="colonne droite"></div>
+  <p>
+    Un assistant automatique qui répond 24h/24 aux questions fréquentes,
+    oriente les clients vers la bonne prestation et guide vers la prise de rendez-vous.
+  </p>
+
+  <p>
+    🌿 Moins d’interruptions pendant les prestations.<br>
+    🌿 Une expérience client fluide et professionnelle.
+  </p>
+
+  <div class="offre">
+    Testez gratuitement pendant 10 jours, sans engagement.
+  </div>
+
+  <p style="margin-top:30px;">
+    💬 Cliquez sur le chat en bas à droite pour tester la démonstration.
+  </p>
+
+  <div class="signature">
+    Elena Djakovic – Consultante en automatisation
+  </div>
+</div>
+
+<div class="colonne droite"></div>
 
 </body>
 </html>
