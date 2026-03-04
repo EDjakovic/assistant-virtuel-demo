@@ -7,15 +7,68 @@
   <!-- Script Tidio -->
   <script src="//code.tidio.co/cvo69wlaoebdqfttrwhltf8keopoce4k.js" async></script>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .colonne {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gauche {
+      background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+    }
+
+    .droite {
+      background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035');
+    }
+
+    .centre {
+      flex: 1;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 400px;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; text-align: center; padding: 50px;">
+<body>
 
-  <h1>Assistant Virtuel pour Salon & Institut</h1>
-  
-  <p>Bienvenue sur la démonstration.</p>
-  
-  <p>Testez le chat en bas à droite pour voir comment l’assistant peut répondre aux questions clients automatiquement.</p>
+  <div class="colonne gauche"></div>
+
+  <div class="centre">
+    <h1>Assistant Virtuel pour Salons & Instituts</h1>
+    <p>
+      Découvrez comment un assistant automatique peut répondre aux demandes clients 24h/24, 
+      gérer les questions fréquentes et faciliter la prise de rendez-vous.
+    </p>
+    <p>
+      💬 Cliquez sur le chat en bas à droite pour tester la démonstration.
+    </p>
+  </div>
+
+  <div class="colonne droite"></div>
 
 </body>
 </html>
